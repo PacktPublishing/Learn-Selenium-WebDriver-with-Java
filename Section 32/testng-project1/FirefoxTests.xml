@@ -1,0 +1,17 @@
+<suite name="Sanity Test on Firefox">
+	<parameters>
+		<parameter name="browser" value="Firefox"/>
+		<parameter name="driverexe" value="/Users/mayurdeshmukh/Documents/Drivers/geckodriver"/>
+	</parameters>
+	<groups>
+		<run>
+			<include name="P0"/>
+		</run>
+	</groups>
+	<test name="Release 2019.5 Sanity Testing">
+		<classes>
+			<class name="com.dezlearn.tests.Ebay_Home_Sanity" />
+			<class name="com.dezlearn.tests.Ebay_Advanced_Search_Sanity" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,12 @@
+<suite name="Before and After Test Demo">
+	<test name="Before and After Test Annotations">
+		<classes>
+			<class name="com.dezlearn.tests.Demo_Test"/>
+		</classes>
+	</test>
+	<test name="General Testing">
+		<classes>
+			<class name="com.dezlearn.tests.Ebay_Advanced_Search_Sanity"/>
+		</classes>
+	</test>
+</suite>

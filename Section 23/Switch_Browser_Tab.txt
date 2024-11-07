@@ -1,0 +1,38 @@
+package com.dezlearn.qa.switching_tabs;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Switch_Browser_Tab {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Switching the driver to new browser window
+		 */
+
+		System.setProperty("webdriver.chrome.driver", "/Users/mayurdeshmukh/Documents/Drivers/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		
+		driver.findElement(By.linkText("Data Policy")).click();
+		
+		String parentWindow = driver.getWindowHandle();
+		
+		Set<String> windows = driver.getWindowHandles();
+		
+		for(String window : windows) {
+			if(!window.equals(parentWindow)) {
+				driver.switchTo().window(window);
+			}
+		}
+		
+		driver.findElement(By.cssSelector("a.signup_btn")).click();
+		
+		driver.switchTo().window(parentWindow);
+	}
+
+}

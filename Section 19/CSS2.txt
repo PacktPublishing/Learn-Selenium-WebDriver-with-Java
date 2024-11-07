@@ -1,0 +1,52 @@
+package com.dezlearn.qa.css;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CSS2 {
+
+	public static void main(String[] args) throws Exception {
+		
+		/*
+		 **** Creating CSS Selector Using Attributes ****
+		 * 	Syntax: TagName[Att1=Value]
+		 * 	In case Att1 is 'id' or 'class' then we can use following symbols:
+		 * 		id => # (hash)
+		 * 		class => . (dot)
+		 * 	Examples: 1. div#u123   2. span.layerParent
+		 */
+		
+
+		System.setProperty("webdriver.chrome.driver", "/Users/mayurdeshmukh/Documents/Drivers/chromedriver");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.amazon.com/");
+		
+		driver.findElement(By.cssSelector("i.hm-icon")).click();
+		
+		Thread.sleep(1000);
+		
+		driver.findElement(By.partialLinkText("Echo & Alexa")).click();
+		
+		Thread.sleep(1000);
+		
+		driver.findElement(By.partialLinkText("Echo Dot")).click();
+		
+		Thread.sleep(1000);
+		
+		String title = driver.findElement(By.cssSelector("span#productTitle")).getText();
+		
+		System.out.println(title);
+		
+		if (title.contains("Echo Dot")) {
+			System.out.println("Pass");
+		} else {
+			System.out.println("Fail");
+		}
+		
+		driver.close();
+	}
+
+}

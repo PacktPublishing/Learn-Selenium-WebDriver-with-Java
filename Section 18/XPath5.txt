@@ -1,0 +1,21 @@
+package com.dezlearn.qa.xpath;
+
+public class XPath5 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * XPath Axes: Ancestor and Descendant Relationship
+		 * 
+		 * Syntax:
+		 * 
+		 * //Node1/ancestor::*
+		 * 
+		 * //Node1/descendant::*
+		 * 
+		 */
+
+
+	}
+
+}

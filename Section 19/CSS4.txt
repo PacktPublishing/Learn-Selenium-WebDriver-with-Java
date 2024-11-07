@@ -1,0 +1,19 @@
+package com.dezlearn.qa.css;
+
+public class CSS4 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Creating CSS with Multiple Attributes
+		 * 
+		 * 1. ANDING the Attributes (No Symbol Required)
+		 * 	  Syntax: TagName[Att1=Value][Att2=Value]
+		 * 
+		 * 2. ORING the Attributes (',' will work as 'OR')
+		 * 	  Syntax: TagName[Att1=Value], TagName[Att2=Value] 
+		 */
+
+	}
+
+}

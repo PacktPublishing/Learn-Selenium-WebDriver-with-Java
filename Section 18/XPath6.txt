@@ -1,0 +1,24 @@
+package com.dezlearn.qa.xpath;
+
+public class XPath6 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * XPath Axes: Preceding and Following
+		 * 
+		 * Syntax:
+		 * 
+		 * //Node1/preceding::*
+		 * 
+		 * //Node1/preceding-sibling::*
+		 * 
+		 * //Node1/following::*
+		 * 
+		 * //Node1/following-sibling::*
+		 * 
+		 */
+
+	}
+	
+}

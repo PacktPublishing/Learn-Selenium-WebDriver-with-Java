@@ -1,0 +1,18 @@
+<suite name="Sanity Test On Chrome">
+	<parameters>
+		<parameter name="browser" value="Chrome"/>
+		<parameter name="driverexe" value="/Users/mayurdeshmukh/Documents/Drivers/chromedriver"/>
+	</parameters>
+	<groups>
+		<run>
+			<include name="P0"/>
+			<include name="P1"/>
+		</run>
+	</groups>
+	<test name="Release 2019.5 Sanity Testing">
+		<classes>
+			<class name="com.dezlearn.tests.Ebay_Home_Sanity" />
+			<class name="com.dezlearn.tests.Ebay_Advanced_Search_Sanity" />
+		</classes>
+	</test>
+</suite>

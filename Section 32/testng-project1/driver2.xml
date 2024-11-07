@@ -1,0 +1,16 @@
+<suite name="Include Exclude Methods Suite">
+	<test name="Provide Methods">
+		<classes>
+			<class name="com.dezlearn.tests.Ebay_Home_Sanity">
+				<methods>
+					<include name="empty_search_test"/>
+				</methods>
+			</class>
+			<class name="com.dezlearn.tests.Ebay_Advanced_Search_Sanity">
+				<methods>
+					<exclude name="empty_advanced_search_test"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

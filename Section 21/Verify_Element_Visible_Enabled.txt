@@ -1,0 +1,29 @@
+package com.dezlearn.qa.get_element_details;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Verify_Element_Visible_Enabled {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * How to validate if an element is visible and enabled?
+		 */
+
+		System.setProperty("webdriver.chrome.driver", "/Users/mayurdeshmukh/Documents/Drivers/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		
+		boolean isDisplayed = driver.findElement(By.id("u_0_u")).isDisplayed();
+		boolean isEnabled = driver.findElement(By.id("u_0_u")).isEnabled();
+		
+		System.out.println(isDisplayed);
+		System.out.println(isEnabled);
+		
+		driver.quit();
+		
+	}
+
+}
